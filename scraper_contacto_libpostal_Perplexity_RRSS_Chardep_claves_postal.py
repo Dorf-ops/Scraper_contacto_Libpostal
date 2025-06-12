@@ -60,7 +60,7 @@ def limpiar_illegal_characters(texto):
 df_aux = pd.read_excel(ARCHIVO_AUX)
 set_ciudades = set(df_aux["Municipio"].dropna().str.lower())
 set_provincias = set(df_aux["Provincia"].dropna().str.lower())
-set_codigos_postales = set(df_aux["Código_Postal"].dropna().astype(str))
+set_codigos_postales = set(df_aux["Código_postal"].dropna().astype(str))
 
 # === CARGA PRINCIPAL ===
 
